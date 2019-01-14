@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html>
+
+
+<html manifest="cache.appcache">
+
 <head>
 	<title></title>
 
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+ first
+		<!--for liquid flow -->
+
+			<link rel="stylesheet" href="./css/animate.css"> <!-- Optional -->
+			<link rel="stylesheet" href="./css/liquid-slider.css">
 
 	<style type="text/css">
 		
@@ -139,6 +147,7 @@
 
 
 
+
 	
 	<!--below top -->
 
@@ -173,6 +182,12 @@
 
 							<br> <br> 
 
+
+							
+
+
+						<!--
+
 							<p id="fg">
 								
 								Nature, in the broadest sense, is the natural, physical, or material world or universe. "Nature" can refer to the phenomena of the physical world, and also to life in general. The study of nature is a large, if not the only, part of science. Although humans are part of nature, human activity is often understood as a separate category from other natural phenomena.
@@ -182,6 +197,50 @@
 								Within the various uses of the word today, "nature" often refers to geology and wildlife. Nature can refer to the general realm of living plants and animals, and in some cases to the processes associated with inanimate objects—the way that particular types of things exist and change of their own accord, such as the weather and geology of the Earth. It is often taken to mean the "natural environment" or wilderness—wild animals, rocks, forest, and in general those things that have not been substantially altered by human intervention, or which persist despite human intervention. For example, manufactured objects and human interaction generally are not considered part of nature, unless qualified as, for example, "human nature" or "the whole of nature". This more traditional concept of natural things which can still be found today implies a distinction between the natural and the artificial, with the artificial being understood as that which has been brought into being by a human consciousness or a human mind. Depending on the particular context, the term "natural" might also be distinguished from the unnatural or the supernatural.</p>	
 
 								<br><br>
+
+							
+							-->
+
+								<!--liquid flow Part B-->
+
+									<div class="liquid-slider" id="slider-id">
+									     
+									     <div>
+									          <h2 class="title">Natural Phenomena</h2>
+									          	
+									          	<br>
+
+									          	Nature, in the broadest sense, is the natural, physical, or material world or universe. "Nature" can refer to the phenomena of the physical world, and also to life in general. The study of nature is a large, if not the only, part of science. Although humans are part of nature, human activity is often understood as a separate category from other natural phenomena.
+
+									     </div>
+
+									     <div>
+
+									          <h2 class="title">Qualities</h2>
+									          	
+									          	<br>
+
+									          	The word nature is derived from the Latin word natura, or "essential qualities, innate disposition", and in ancient times, literally meant "birth".[1] Natura is a Latin translation of the Greek word physis (φύσις), which originally related to the intrinsic characteristics that plants, animals, and other features of the world develop of their own accord.[2][3] The concept of nature as a whole, the physical universe, is one of several expansions of the original notion; it began with certain core applications of the word φύσις by pre-Socratic philosophers, and has steadily gained currency ever since. This usage continued during the advent of modern scientific method in the last several centuries.[4][5]
+
+									     </div>
+
+									     <div>
+									          <h2 class="title">Geology</h2>
+									          	
+												<br>	
+
+												Within the various uses of the word today, "nature" often refers to geology and wildlife. Nature can refer to the general realm of living plants and animals, and in some cases to the processes associated with inanimate objects—the way that particular types of things exist and change of their own accord, such as the weather and geology of the Earth. It is often taken to mean the "natural environment" or wilderness—wild animals, rocks, forest, and in general those things that have not been substantially altered by human intervention, or which persist despite human intervention. For example, manufactured objects and human interaction generally are not considered part of nature, unless qualified as, for example, "human nature" or "the whole of nature". This more traditional concept of natural things which can still be found today implies a distinction between the natural and the artificial, with the artificial being understood as that which has been brought into being by a human consciousness or a human mind. Depending on the particular context, the term "natural" might also be distinguished from the unnatural or the supernatural.
+
+
+									     </div>
+
+									</div>
+
+
+								<!--upto here liquid flow Part A-->
+
+								<br><br><br><br>
+
 
 								<p id="fg">An ecosystem (also called as environment) is a natural unit consisting of all plants, animals and micro-organisms (biotic factors) in an area functioning together with all of the non-living physical (abiotic) factors of the environment.[30]
 
@@ -255,6 +314,49 @@
 
 
 	</div>
+
+
+	<script type="text/javascript">
+		
+
+		function errorCache(event) {
+    // Either a download error occurred or the user is offline
+
+   			var offlineURL = 'http://dev.html/?offline=true'
+   		 	window.location = offlineURL;
+		}
+
+			window.applicationCache.addEventListener("error", errorCache, false);
+
+
+	</script>
+
+									<!--for liquid flow Part A -->
+
+										<footer>
+
+											<!-- Add these to the <head> or the <footer> -->
+
+											<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+										    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+									        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+											<script src="./js/jquery.liquid-slider.min.js"></script>
+
+
+											<script>	
+
+												/* If installing in the footer, you won't need $(function() {} */
+
+												
+												     $('#slider-id').liquidSlider();
+												
+
+											</script>
+
+										</footer>
+
+
+
 
 
 </body>
