@@ -2,7 +2,7 @@ const cacheName = 'v1';
 
 const cacheAssets = [
 
-	'dev.html'
+	'./dev.html'
 
 ];
 
@@ -53,5 +53,5 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
 	console.log('Service Worker: Fetching');
-	e.respondWith(fetch(e.request).catch(() => caches.match('dev.html')));
+	e.respondWith(fetch(e.request).catch(() => caches.match('./dev.html')));
 });
