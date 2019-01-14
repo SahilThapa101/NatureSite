@@ -1,9 +1,0 @@
-CACHE MANIFEST
-
-
-
-NETWORK:
-index.html
-
-FALLBACK:
-index.html dev.html
