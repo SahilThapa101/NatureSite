@@ -6,6 +6,58 @@
 <head>
 	<title></title>
 
+		
+	<!--First Part -->
+
+			<!-- include jQuery library -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+		<!-- include Cycle plugin -->
+
+		<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    
+					$('.pics').cycle({ 
+			   			 fx:     'scrollDown', 
+			    		random:  1 
+						});
+
+
+				});
+
+		</script>
+
+		<style type="text/css">
+			
+			.pics 
+			{  
+			    height:  232px;  
+			    width:   232px;  
+			    padding: 0;  
+			    margin:  0;  
+			} 
+			 
+			.pics img 
+			{  
+			    padding: 15px;  
+			    border:  1px solid #ccc;  
+			    background-color: #eee;  
+			    width:  200px; 
+			    height: 200px; 
+			    top:  0; 
+			    left: 0 
+			} 
+
+
+
+		</style>
+
+		 	
+
+
+
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
@@ -25,12 +77,10 @@
 			background-color: green;
 			height: 600px;
 			background-size: 1400px;
-
 			/* Add the blur effect */
   			
   			filter: blur(8px);
   			-webkit-filter: blur(8px);
-
   			  /* Center and scale the image nicely */
 			  background-position: center;
 			  background-repeat: no-repeat;
@@ -39,7 +89,6 @@
 			
 		
 		}
-
 		/* Position text in the middle of the page/image */
 		
 		.bg-text 
@@ -58,64 +107,53 @@
 		  padding: 20px;
 		  text-align: center;
 		}
-
 		.op section
 		{
 			float: left;
 		}
-
 		.left
 		{
 			width: 80%;
 			height: 6000px;
 			background: ghostwhite;
 			border: 2px solid grey;
-
 		}
-
 		.right
 		{
 			width: 20%;
 			height: 6000px;
 			background: ghostwhite;
 		}
-
 		#xy
 		{
 			padding-left: 140px;
 		}
-
 		#fg
 		{
 			width: 85%;
 			padding-left: 40px;
 		}
-
 		.ab
 		{
 			border: 2px solid grey;
 			
 			color: black;
 		}
-
 		.minLeft
 		{
 			width: 70%;
 			border: 2px solid grey;
 		}
-
 		.minRight
 		{
 			width: 30%;
 			border: 2px solid grey;
 		}
-
 		#ae
 		{
 			padding-left: 50px;
 			font-size: 14px;
 		}
-
 	</style>
 
 
@@ -186,21 +224,7 @@
 							
 
 
-						<!--
-
-							<p id="fg">
-								
-								Nature, in the broadest sense, is the natural, physical, or material world or universe. "Nature" can refer to the phenomena of the physical world, and also to life in general. The study of nature is a large, if not the only, part of science. Although humans are part of nature, human activity is often understood as a separate category from other natural phenomena.
-
-								The word nature is derived from the Latin word natura, or "essential qualities, innate disposition", and in ancient times, literally meant "birth".[1] Natura is a Latin translation of the Greek word physis (φύσις), which originally related to the intrinsic characteristics that plants, animals, and other features of the world develop of their own accord.[2][3] The concept of nature as a whole, the physical universe, is one of several expansions of the original notion; it began with certain core applications of the word φύσις by pre-Socratic philosophers, and has steadily gained currency ever since. This usage continued during the advent of modern scientific method in the last several centuries.[4][5]
-
-								Within the various uses of the word today, "nature" often refers to geology and wildlife. Nature can refer to the general realm of living plants and animals, and in some cases to the processes associated with inanimate objects—the way that particular types of things exist and change of their own accord, such as the weather and geology of the Earth. It is often taken to mean the "natural environment" or wilderness—wild animals, rocks, forest, and in general those things that have not been substantially altered by human intervention, or which persist despite human intervention. For example, manufactured objects and human interaction generally are not considered part of nature, unless qualified as, for example, "human nature" or "the whole of nature". This more traditional concept of natural things which can still be found today implies a distinction between the natural and the artificial, with the artificial being understood as that which has been brought into being by a human consciousness or a human mind. Depending on the particular context, the term "natural" might also be distinguished from the unnatural or the supernatural.</p>	
-
-								<br><br>
-
-							
-							-->
-
+						
 								<!--liquid flow Part B-->
 
 									<div class="liquid-slider" id="slider-id">
@@ -265,7 +289,15 @@
 							<center /><a href="https://en.wikipedia.org/wiki/Aurora" target="_blank">Aurora Borealis in Norway</a>
 
 
-							<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+							<br><br><br><br><br><br>
+
+								<div class="pics"> 
+								    <img src="images/henry.jpg" width="200" height="200" /> 
+								    <img src="images/andrew.jpg" width="200" height="200" /> 
+								    <img src="images/adam.jpg" width="200" height="200" /> 
+								</div> 
+
+							<br><br><br><br><br><br>
 
 								
 							
@@ -330,13 +362,10 @@
 
 
 											<script>	
-
 												/* If installing in the footer, you won't need $(function() {} */
-
 												
 												     $('#slider-id').liquidSlider();
 												
-
 											</script>
 
 										</footer>
