@@ -119,6 +119,12 @@
 			height: 300px;
 			width: 300px;
 		}
+
+		#new
+		{
+			height: 300px;
+			width: 300px;
+		}
 		
 	</style>
 
@@ -231,6 +237,7 @@
 
 								<br><br><br><br>
 
+							<div id="new">
 
 								<p id="fg">An ecosystem (also called as environment) is a natural unit consisting of all plants, animals and micro-organisms (biotic factors) in an area functioning together with all of the non-living physical (abiotic) factors of the environment.[30]
 
@@ -243,6 +250,12 @@
 								A greater number or variety of species or biological diversity of an ecosystem may contribute to greater resilience of an ecosystem, because there are more species present at a location to respond to change and thus "absorb" or reduce its effects. This reduces the effect before the ecosystem's structure is fundamentally changed to a different state. This is not universally the case and there is no proven relationship between the species diversity of an ecosystem and its ability to provide goods and services on a sustainable level.
 
 								The term ecosystem can also pertain to human-made environments, such as human ecosystems and human-influenced ecosystems, and can describe any situation where there is relationship between living organisms and their environment. Fewer areas on the surface of the earth today exist free from human contact, although some genuine wilderness areas continue to exist without any forms of human intervention.</p>
+
+								<br><br>
+
+								<button type="button" onclick="loadDoc()">See more!</button>
+
+							</div>
 
 						</section>
 					
@@ -402,6 +415,27 @@
 		
 		
 	</div>
+
+	<!-- Script For ajax -->
+
+		<script>
+
+				function loadDoc() {
+				  var xhttp = new XMLHttpRequest();
+				 
+				  xhttp.open('GET', 'page1.html', true);
+				  xhttp.send();
+
+				   xhttp.onreadystatechange = function(){
+				    if(xhttp.readyState == 4 && xhttp.status == 200) {
+				      document.getElementById('new').innerHTML = xhttp.responseText;
+				    }
+				  }
+
+
+				}
+
+		</script>
 	
 	
 	
