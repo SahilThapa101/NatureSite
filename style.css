@@ -11,3 +11,16 @@ a
 	color: black;
 	font-size: 13px;
 }
+
+.column {
+  float: left;
+  width: 50%;
+  
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+iframe
+{
+	width: 100%;
+	height: 160px;
+}
