@@ -13,14 +13,43 @@ a
 }
 
 .column {
-  float: left;
-  width: 50%;
+  
+  width: 115%;
   
   height: 300px; /* Should be removed. Only for demonstration */
 }
 
 iframe
 {
-	width: 100%;
-	height: 160px;
+	width: 90%;
+	height: 190px;
+	margin-left: 20px;
+}
+
+#aa
+{
+	font-size: 30px;
+}
+
+#ab
+{
+	font-size: 30px;
+	
+}
+
+.not
+{
+	width: 115%;
+}
+
+#another
+{
+	margin-left: 20px;
+	width: 90%;
+	height: 190px;
+}
+
+#ac
+{
+	font-size: 30px;
 }
